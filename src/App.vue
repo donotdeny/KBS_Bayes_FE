@@ -106,7 +106,6 @@ export default {
       this.text = "";
     },
     async handleClick(item, option) {
-      debugger
       this.kbs[item.idName] = option.id;
       if(Object.keys(this.kbs).length - 1 === this.lengthSignal) {
       await getAdvisory(this.kbs).then((res) => {
